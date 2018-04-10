@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  form(action=`/users/${input}?_method=DELETE`, method='POST')
+    input(type='text' name='input' value="")
+    button(type='submit') Supprimer
